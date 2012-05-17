@@ -115,19 +115,7 @@
 			<artifactId>junit</artifactId>
 			<version>4.7</version>
 			<scope>test</scope>
-		</dependency>    
-		
-<!-- needed for Heroku -->
-	<dependency>
-  <groupid>org.eclipse.jetty</groupid>
-  <artifactid>jetty-webapp</artifactid>
-  <version>7.4.4.v20110707</version>
-</dependency>
-<dependency>
-  <groupid>org.mortbay.jetty</groupid>
-  <artifactid>jsp-2.1-glassfish</artifactid>
-  <version>2.1.v20100127</version>
-</dependency>    
+		</dependency>        
 	</dependencies>
 	<build>
 		<plugins>
@@ -171,30 +159,28 @@
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
             </plugin>
- <!-- needed for Heroku -->
-  <plugin>
-  <groupid>org.codehaus.mojo</groupid>
-  <artifactid>appassembler-maven-plugin</artifactid>
-  <version>1.1.1</version>
-  <executions>
-    <execution>
-      <phase>package</phase>
-      <goals><goal>assemble</goal></goals>
-      <configuration>
-        <assembledirectory>target</assembledirectory>
-        <extrajvmarguments>-Xmx512m</extrajvmarguments>
-        <programs>
-          <program>
-            <mainclass>Main</mainclass>
-            <name>webapp</name>
-          </program>
-        </programs>
-      </configuration>
-    </execution>
-  </executions>
-</plugin>
-        
-              
+        <!-- needed for Heroku -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>2.3</version>
+            <executions>
+                <execution>
+                    <phase>package</phase>
+                        <goals><goal>copy</goal></goals>
+                    <configuration>
+                        <artifactItems>
+                               <artifactItem>
+                                   <groupId>org.mortbay.jetty</groupId>
+                                   <artifactId>jetty-runner</artifactId>
+                                   <version>7.4.5.v20110725</version>
+                                   <destFileName>jetty-runner.jar</destFileName>
+                               </artifactItem>
+                        </artifactItems>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>       
 		</plugins>
 	</build>
 </project>
