@@ -115,10 +115,9 @@
 			<artifactId>junit</artifactId>
 			<version>4.7</version>
 			<scope>test</scope>
-		</dependency>        
-	</dependencies>
-	
-	 <!-- needed for Heroku -->
+		</dependency>    
+		
+<!-- needed for Heroku -->
 	<dependency>
   <groupid>org.eclipse.jetty</groupid>
   <artifactid>jetty-webapp</artifactid>
@@ -128,9 +127,8 @@
   <groupid>org.mortbay.jetty</groupid>
   <artifactid>jsp-2.1-glassfish</artifactid>
   <version>2.1.v20100127</version>
-</dependency>
-	
-	
+</dependency>    
+	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
