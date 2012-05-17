@@ -189,7 +189,7 @@
         <programs>
           <program>
             <mainclass>Main</mainclass>
-            <name>webapp</name>
+            <name>app</name>
           </program>
         </programs>
       </configuration>
