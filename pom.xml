@@ -189,7 +189,7 @@
         <programs>
           <program>
             <mainclass>Main</mainclass>
-            <name>app</name>
+            <name>The L Tracker</name>
           </program>
         </programs>
       </configuration>
