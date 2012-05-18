@@ -66,5 +66,6 @@ public class SuperKickingEnterprizyMapper {
 	public void setDevelopment(Integer development) {
 		this.development = development;
 	}
+
 	
 }

@@ -14,20 +14,28 @@ import com.ltracker.domain.SuperKickingEnterprizyMapper;
 @SessionAttributes({ "superKickingEnterprizyMapper" })
 @Controller
 public class HomeController {
+	
+	private static SuperKickingEnterprizyMapper superKickingEnterprizyMapper = new SuperKickingEnterprizyMapper();
 		
 	@RequestMapping(value = "/")
 	public ModelAndView home() {
 		ModelAndView mav = new ModelAndView("home");
-		SuperKickingEnterprizyMapper superKickingEnterprizyMapper = new SuperKickingEnterprizyMapper();
 		mav.addObject("superKickingEnterprizyMapper", superKickingEnterprizyMapper);
 		return mav;
 	}
 	
-	@RequestMapping(value = "generateReport.html")
-	public ModelAndView generateReport(@ModelAttribute("superKickingEnterprizyMapper") SuperKickingEnterprizyMapper superKickingEnterprizyMapper) {
+	@RequestMapping(value = "submitTracker.html")
+	public String generateReport(@ModelAttribute("superKickingEnterprizyMapper") SuperKickingEnterprizyMapper superKickingEnterprizyMapper) {
 		ModelAndView mav = new ModelAndView("generateReport");
 		Date date = new Date();
 		mav.addObject("date", date);
+		mav.addObject("superKickingEnterprizyMapper", superKickingEnterprizyMapper);
+		return "redirect:generateReport.html";
+	}
+	
+	@RequestMapping(value = "generateReport.html")
+	public ModelAndView generateReport() {
+		ModelAndView mav = new ModelAndView("generateReport");
 		mav.addObject("superKickingEnterprizyMapper", superKickingEnterprizyMapper);
 		return mav;
 	}

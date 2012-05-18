@@ -19,7 +19,7 @@
    		</article> 
  <div style="background-color:white; align:center;">
  <h2>Adjust each slider to reflect what task is currently being done:</h2>
- <form:form action="generateReport.html" commandName="superKickingEnterprizyMapper" >
+ <form:form action="submitTracker.html" commandName="superKickingEnterprizyMapper" >
 	<tracker:targetSlider name="weather" label="Weather Report"/>				
 	<tracker:targetSlider name="maintanence" label="Maintanence"/>
 	<tracker:targetSlider name="grilling" label="Grilling"/>
