@@ -2,15 +2,15 @@ package com.ltracker.domain;
 
 public class SuperKickingEnterprizyMapper {
 	
-	private Integer weather;
-	private Integer maintanence;
-	private Integer grilling;
-	private Integer sports;
-	private Integer beer;
-	private Integer sickLeave;
-	private Integer casualStroll;
-	private Integer bathroom;
-	private Integer development;
+	private Integer weather = 50;
+	private Integer maintanence = 50;
+	private Integer grilling = 50;
+	private Integer sports = 50;
+	private Integer beer = 50;
+	private Integer sickLeave = 50;
+	private Integer casualStroll = 50;
+	private Integer bathroom = 50;
+	private Integer development = 50;
 	
 	public Integer getWeather() {
 		return weather;
