@@ -36,6 +36,7 @@ public class HomeController {
 	@RequestMapping(value = "generateReport.html")
 	public ModelAndView generateReport() {
 		ModelAndView mav = new ModelAndView("generateReport");
+		mav.addObject("date", new Date());
 		mav.addObject("superKickingEnterprizyMapper", superKickingEnterprizyMapper);
 		return mav;
 	}
