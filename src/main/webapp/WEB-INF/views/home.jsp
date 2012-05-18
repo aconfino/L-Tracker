@@ -14,7 +14,7 @@
    		<h2>05.18.2012  -  Taking productivity to knew depths</h2>
    			<p>L-Tracker will not only change your business - it WILL change your life.  Some 
    			businesses still think that developers are paid to just code.  Our product recognizes
-   			that times are changes and developers do everything from grilling to plumbing to weather tracking.
+   			that times are changing and developers do everything from grilling to plumbing to weather tracking.
    			Finally - a product lets you track their tasks accordingly.</p>
    		</article> 
  <div style="background-color:white; align:center;">
