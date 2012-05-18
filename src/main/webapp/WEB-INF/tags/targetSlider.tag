@@ -19,9 +19,9 @@
 });
 </script>
 
-<span class="superKickin" style="width:130px; float:left;">
+<span class="superKickin" style="width:105px; float:left;">
 <p>
-	<label for="${pageScope.name}Value">${pageScope.label}</label>
+	<label for="${pageScope.name}Value" style=" float:left;">${pageScope.label}</label>
 	<input type="text" id="${pageScope.name}Value" name="${pageScope.name}" style="border:0; color:#f6931f; font-weight:bold;" />
 </p>
 <div id="${pageScope.name}Slider" style="height:300px;"></div>
