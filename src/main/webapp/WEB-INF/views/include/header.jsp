@@ -6,9 +6,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib prefix="tracker" tagdir="/WEB-INF/tags" %>
 
-
- 
-
 <!doctype html>  
 <head>
 <meta charset="UTF-8">
