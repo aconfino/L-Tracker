@@ -142,6 +142,14 @@
 			<version>3.0.3</version>
 		</dependency>
 
+		<!-- using container neutral servlet for dispatching static content -->
+		<!-- also needed to work with servlet spec 2.4 and WAS 6.1 -->
+		<dependency>
+			<groupId>org.springframework.webflow</groupId>
+			<artifactId>spring-js</artifactId>
+			<version>2.3.1.RELEASE</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>

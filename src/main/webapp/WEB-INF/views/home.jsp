@@ -4,12 +4,12 @@
 <body>
     <div id="container">
    		<section id="intro">
-   			<img src="/resources/images/banner1.png" width="960" height="300" alt="baner">
+   			<img src="/static/resources/images/banner1.png" width="960" height="300" alt="baner">
    		</section>
    <div class="holder_content1">
    <section class="group4">
    		<h1>Latest news</h1>
-   		<img src="/resources/images/icon3.png" width="51" height="52" alt="icons" class="icons"/>
+   		<img src="/static/resources/images/icon3.png" width="51" height="52" alt="icons" class="icons"/>
    		<article>
    		<h2>05.18.2012  -  Taking productivity to new depths</h2>
    			<p>L-Tracker will not only change your business - it WILL change your life.  Some 

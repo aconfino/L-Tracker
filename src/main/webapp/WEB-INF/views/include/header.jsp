@@ -10,8 +10,8 @@
 <head>
 <meta charset="UTF-8">
 
-<link rel="shortcut icon" href="/resources/images/favicon.gif" type="image/x-icon"/> 
-<link rel="stylesheet" type="text/css" href="/resources/css/styles.css"/>
+<link rel="shortcut icon" href="/static/resources/images/favicon.gif" type="image/x-icon"/> 
+<link rel="stylesheet" type="text/css" href="/static/resources/css/styles.css"/>
 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
